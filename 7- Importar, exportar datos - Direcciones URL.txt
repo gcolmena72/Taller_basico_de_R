@@ -1,0 +1,8 @@
+Direcciones repositorios:
+
+Datos de los resultados de un análisis químico de vinos cultivados en la misma región de Italia pero procedentes de tres cultivares diferentes.
+El análisis determinó las cantidades de 13 componentes encontrados en cada uno de los tres tipos de vinos.
+http://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data
+
+Datos de una base de diagnósticos de cancer mamario de la Universidad de Wisconsin, usado para probar métodos de aprendizaje automático.
+https://raw.githubusercontent.com/jboscomendoza/r-principiantes-bookdown/master/datos/breast-cancer-wis.data
