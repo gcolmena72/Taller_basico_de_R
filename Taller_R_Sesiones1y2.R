@@ -346,6 +346,10 @@ USAccDeaths
 iris
 iris
 
+a <- c("maria", "pedro", "juan", "ana")
+
+matrix(1,nrow=2, ncol=2, byrow = T)
+
 # DATA FRAMES -------------------------------------------------------------
 midf <- data.frame("estudiante"=1:6,
                    "seccion"=c("a","b","c","d","a","b"),
@@ -412,13 +416,70 @@ str(iris)
 
 colnames(iris)
 names(iris)
-iris$Sepal.Width
-attach(iris)
-mean(Sepal.Width)
 
+
+iris$Sepal.Length
+attach(iris)
+
+mean(Sepal.Width)
+var(Sepal.Width)
+
+
+# EDA EXPLORATORY DATA ANALYSIS -------------------------------------------
 head(iris)
 tail(iris)
 iris[40:60, ]
 max(Sepal.Length)
+min(Sepal.Length)
+
 summary(iris)
+summary(Petal.Length)
+
 range(Petal.Length)
+
+iris[125:135,]
+iris[,2:3]
+iris[25:35,2:3]
+
+l.petalos <- iris[,3]
+l.petalos
+
+# LISTAS ------------------------------------------------------------------
+mi_vector <- 1:10
+mi_matriz <- matrix(1:4,nrow = 2)
+mi_df <- data.frame("num"=1:3, "let"=c("a", "b", "c"))
+mi_df
+
+mi_lista <- list("un_vector"= mi_vector, "una_matriz" = mi_matriz, "un_df" = mi_df)
+mi_lista
+
+# Podemos crear una lista que contenga otras listas:
+lista_recursiva <- list("lista1" = mi_lista, "lista2" = mi_lista)
+lista_recursiva
+
+dim(lista_recursiva)
+
+# Para extraer elementos de una liksta:
+mi_lista$una_matriz
+mi_lista[[1]]
+mi_lista$un_df[2]
+
+mi_lista / 2
+
+# MANEJO DE PAQUETES ------------------------------------------------------
+
+.libPaths()
+library()
+search()
+
+# Para obtener la descripcion:
+packageDescription("stats")
+
+help("stats")
+installed.packages()
+
+#install.packages("fdth")
+library(fdth)
+#update.packages()
+
+
