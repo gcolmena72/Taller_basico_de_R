@@ -1,17 +1,17 @@
 
 # IMPORTAR DATOS ----------------------------------------------------------
 
-# download.file(
-#   url="https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data",
-#               destfile = "vinos.data")
-# load(vinos.data)
+download.file(
+  url="https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data",
+               destfile = "vinos.data")
+misDatos1 <- read.table("vinos.data", header=T, sep=",")
+misDatos1
 
-misDatos <- read.csv("Data_Banco.csv", header=T, sep=",")
-vinos <- read.csv("vinos.data", header=T, sep=",")
+misDatos2 <- read.csv("Data_Banco.csv", header=T, sep=",")
 str(misDatos)
-class(misDatos)
-head(misDatos)
-tail(misDatos)
+class(misDatos2)
+head(misDatos2)
+tail(misDatos2)
 
 misDatos2 <- read.table("dataset_con_encabezado.txt", skip=8, header=T, sep=",")
 misDatos2
